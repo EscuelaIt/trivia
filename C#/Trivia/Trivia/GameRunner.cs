@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Trivia
 {
@@ -15,6 +16,8 @@ namespace Trivia
             aGame.Add("Sue");
 
             var rand = new Random();
+            if(args.Contains("testing"))
+                rand = new Random(123);
 
             do
             {

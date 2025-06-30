@@ -17,7 +17,7 @@ public class ApprovalTests
         Console.SetOut(writer);
 
         // Run the game
-        Trivia.GameRunner.Main(Array.Empty<string>());
+        Trivia.GameRunner.Main(new[] { "testing" });
 
         // Capture the output
         var output = writer.ToString();
